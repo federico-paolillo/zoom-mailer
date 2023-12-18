@@ -1,0 +1,17 @@
+<h1>Availabilities</h1>
+
+{{ range . }}
+
+  <h2> {{ .Month }} </h2>
+
+  <ul>
+  
+  {{ range .Availabilities }}
+
+    <li>{{ . }}</li>
+
+  {{ end }}
+
+  </ul>
+
+{{ end }}
