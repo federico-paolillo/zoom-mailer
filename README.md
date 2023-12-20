@@ -22,10 +22,11 @@ The following table summarizes the available configuration options, their usage 
 **Note:** All environment variables must be prefixed with `ZOO__`. E.g.: `folder` should be `ZOO__folder`.
 **Note:** _All_ environment variables are required. If not configured the default will be used
 
-|Name|Description|Default|
-|`folder`|Folder that `zoo-mailer` will scan to look for files to parse, only top-level files will be considered|`/var/zoo/files`|
-|`mail_tmpl`|Go [template/html](https://pkg.go.dev/html/template) file that `zoo-mailer` will use to produce the digest|`/etc/zoo/templates/mail.tmpl`|
-|`sendlist`|Text file with one recipient per line, and `zoo-mailer` uses this file to know whom the digest should be sent to|`/var/zoo/files`|
+| Name        | Description                                                                                                      | Default                        |
+| ----------- | ---------------------------------------------------------------------------------------------------------------- | ------------------------------ |
+| `folder`    | Folder that `zoo-mailer` will scan to look for files to parse, only top-level files will be considered           | `/var/zoo/files`               |
+| `mail_tmpl` | Go [template/html](https://pkg.go.dev/html/template) file that `zoo-mailer` will use to produce the digest       | `/etc/zoo/templates/mail.tmpl` |
+| `sendlist`  | Text file with one recipient per line, and `zoo-mailer` uses this file to know whom the digest should be sent to | `/var/zoo/files`               |
 
 ## Running
 
