@@ -19,7 +19,7 @@ func Run(zooConfig *ZooAppConfig) StatusCode {
 
 	stdoutMailer := mailer.NewStdoutMailer()
 
-	sendlist, sendlistError := loadSendlistFromFile(zooConfig.emailTemplateFilePath)
+	sendlist, sendlistError := loadSendlistFromFile(zooConfig.sendlistFilePath)
 
 	if sendlistError != nil {
 
